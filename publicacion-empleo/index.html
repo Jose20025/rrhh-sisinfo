@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css"
+    />
+    <title>Nueva publicación de empleo</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Importadora KAIS</h1>
+      <img src="../assets/kais-logo.jpg" alt="Logo de KAIS" width="80" />
+    </header>
+
+    <main class="main-container">
+      <h2>Publicación de Empleo</h2>
+
+      <form>
+        <section class="row">
+          <div>
+            <label for="codigo">Código</label>
+            <input type="text" name="codigo" id="codigo" />
+          </div>
+
+          <div>
+            <label for="fecha">Fecha</label>
+            <input type="date" name="fecha" id="fecha" />
+          </div>
+        </section>
+
+        <section>
+          <div class="row">
+            <label for="instrucciones">Instrucciones</label>
+            <input
+              class="input"
+              type="text"
+              name="instrucciones"
+              id="instrucciones"
+            />
+          </div>
+
+          <div class="row">
+            <label for="infoEmpresa">Información de la empresa</label>
+            <input
+              class="input"
+              type="text"
+              name="infoEmpresa"
+              id="infoEmpresa"
+            />
+          </div>
+
+          <div class="row">
+            <label for="infoPuesto">Información del puesto</label>
+            <input
+              class="input"
+              type="text"
+              name="infoPuesto"
+              id="infoPuesto"
+            />
+          </div>
+
+          <div class="row">
+            <label for="fechaLimite">Fecha límite</label>
+            <input
+              class="input"
+              type="date"
+              name="fechaLimite"
+              id="fechaLimite"
+            />
+          </div>
+
+          <div class="row">
+            <label for="tipoContrato">Tipo de Contrato</label>
+            <select name="tipoContrato" id="tipoContrato">
+              <option value="mensual">Mensual</option>
+              <option value="anual">Anual</option>
+            </select>
+          </div>
+
+          <div class="row">
+            <label for="infoAcademica">Información Académica</label>
+            <select name="infoAcademica" id="infoAcademica">
+              <option value="bachiller">Bachiller</option>
+              <option value="tecnicatura">Tecnicatura</option>
+              <option value="maestria">Maestría</option>
+            </select>
+          </div>
+
+          <div class="row">
+            <label for="responsabilidades">Responsabilidades</label>
+            <select name="responsabilidades" id="responsabilidades">
+              <option value="0">Seleccione</option>
+            </select>
+          </div>
+
+          <div class="row">
+            <label for="experienciaLaboral"
+              >Experiencia Laboral Requerida</label
+            >
+            <select name="experienciaLaboral" id="experienciaLaboral">
+              <option value="0">Seleccione</option>
+            </select>
+          </div>
+        </section>
+
+        <section class="buttons">
+          <button>Guardar</button>
+          <button>Modificar</button>
+          <button>Eliminar</button>
+          <button>Consultar</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

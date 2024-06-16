@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css"
+    />
+    <title>Solicitudes de Adición</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Importadora KAIS</h1>
+      <img src="../assets/kais-logo.jpg" alt="Logo de KAIS" width="80" />
+    </header>
+
+    <main>
+      <form>
+        <section>
+          <div class="form-control">
+            <label for="codigo">Código</label>
+            <input type="text" id="codigo" name="codigo" />
+          </div>
+        </section>
+
+        <section id="noCodigo">
+          <div class="form-control">
+            <label for="departamento">Departamento</label>
+            <select name="departamento" id="departamento">
+              <option value="0">Seleccione</option>
+            </select>
+          </div>
+
+          <div class="form-control">
+            <label for="cargo">Cargo</label>
+            <select name="cargo" id="cargo">
+              <option value="0">Seleccione</option>
+            </select>
+          </div>
+
+          <div class="form-control">
+            <label for="fecha">Fecha</label>
+            <input type="date" name="fecha" id="fecha" />
+          </div>
+
+          <div class="form-control">
+            <label for="motivo">Motivo</label>
+            <input type="text" name="motivo" id="motivo" />
+          </div>
+
+          <div class="form-control">
+            <label for="Responsabilidades">Responsabilidades del Cargo</label>
+            <textarea
+              name="Responsabilidades"
+              id="Responsabilidades"
+            ></textarea>
+          </div>
+
+          <div class="form-control">
+            <label for="habilidades">Habilidades</label>
+            <input type="text" name="habilidades" id="habilidades" />
+          </div>
+
+          <div class="form-control">
+            <label for="cualidades">Cualidades</label>
+            <input type="text" name="cualidades" id="cualidades" />
+          </div>
+
+          <div class="center-input">
+            <label for="jefeDepartamento">Jefe de Departamento</label>
+            <input type="text" name="jefeDepartamento" id="jefeDepartamento" />
+          </div>
+        </section>
+
+        <section class="buttons">
+          <button>Guardar</button>
+          <button>Modificar</button>
+          <button>Eliminar</button>
+          <button>Consultar</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

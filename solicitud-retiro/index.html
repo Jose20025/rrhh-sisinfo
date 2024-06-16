@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css"
+    />
+    <title>Solicitudes de Retiro</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Importadora KAIS</h1>
+      <img src="../assets/kais-logo.jpg" alt="Logo de KAIS" width="80" />
+    </header>
+
+    <main>
+      <form>
+        <section>
+          <div class="form-control">
+            <label for="codigo">Código</label>
+            <input type="text" id="codigo" name="codigo" />
+          </div>
+        </section>
+
+        <section id="noCodigo">
+          <h2>Información de la empresa</h2>
+
+          <div class="form-control">
+            <label for="nombreEmpresa">Nombre de la empresa</label>
+            <input type="text" id="nombreEmpresa" name="nombreEmpresa" />
+          </div>
+
+          <div class="form-control">
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" name="direccion" />
+          </div>
+
+          <h2>Información del empleado</h2>
+
+          <div class="form-control">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" name="nombre" />
+          </div>
+
+          <div class="form-control">
+            <label for="ci">CI</label>
+            <input type="text" id="ci" name="ci" />
+          </div>
+
+          <div class="form-control">
+            <label for="departamento">Departamento</label>
+            <select name="departamento" id="departamento">
+              <option value="0">Seleccione</option>
+            </select>
+          </div>
+
+          <div class="form-control">
+            <label for="cargo">Cargo</label>
+            <select name="cargo" id="cargo">
+              <option value="0">Seleccione</option>
+            </select>
+          </div>
+
+          <div class="form-control">
+            <label for="fechaRetiro">Fecha de Retiro</label>
+            <input type="date" id="fechaRetiro" name="fechaRetiro" />
+          </div>
+
+          <div class="form-control">
+            <label for="indemnizacion">Cantidad de Indemnización</label>
+            <input type="text" id="indemnizacion" name="indemnizacion" />
+          </div>
+
+          <div class="form-control">
+            <label for="plazoPago">Plazo de Pago</label>
+
+            <div class="row">
+              <input type="text" id="plazoPago" name="plazoPago" />
+              <span>días</span>
+            </div>
+          </div>
+
+          <div class="form-control">
+            <label for="fichaEvaluacion">Ficha de Evaluación</label>
+            <input type="file" id="fichaEvaluacion" name="fichaEvaluacion" />
+          </div>
+        </section>
+
+        <section class="buttons">
+          <button>Guardar</button>
+          <button>Modificar</button>
+          <button>Eliminar</button>
+          <button>Consultar</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

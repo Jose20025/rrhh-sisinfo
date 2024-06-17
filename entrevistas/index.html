@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css"
+    />
+    <title>Entrevistas a Candidatos</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Importadora KAIS</h1>
+      <img src="../assets/kais-logo.jpg" alt="Logo de KAIS" width="80" />
+    </header>
+
+    <main>
+      <form>
+        <section>
+          <div class="form-control">
+            <label for="codigo">Código</label>
+            <input type="text" id="codigo" name="codigo" />
+          </div>
+        </section>
+
+        <section id="noCodigo">
+          <div class="form-control">
+            <label for="codigoCandidato">Código de Candidato</label>
+            <select name="codigoCandidato" id="codigoCandidato">
+              <option value="0">Seleccione</option>
+            </select>
+          </div>
+
+          <div class="form-control">
+            <label for="profesion">Profesión</label>
+            <input type="text" id="profesion" name="profesion" />
+          </div>
+
+          <div class="form-control">
+            <label for="departamento">Departamento</label>
+            <select name="departamento" id="departamento">
+              <option value="0">Seleccione</option>
+            </select>
+          </div>
+
+          <h2>Información Adicional</h2>
+
+          <div class="form-control">
+            <label for="moto">Maneja motocicleta?</label>
+            <input type="checkbox" id="moto" name="moto" value="moto" />
+          </div>
+
+          <div class="form-control">
+            <label for="auto">Maneja automóvil?</label>
+            <input type="checkbox" id="auto" name="auto" value="moto" />
+          </div>
+
+          <div class="form-control">
+            <label for="procesadorTexto">Maneja procesador de texto?</label>
+            <input
+              type="checkbox"
+              id="procesadorTexto"
+              name="procesadorTexto"
+              value="moto"
+            />
+          </div>
+
+          <div class="form-control">
+            <label for="planillas">Maneja planillas electrónicas?</label>
+            <input
+              type="checkbox"
+              id="planillas"
+              name="planillas"
+              value="moto"
+            />
+          </div>
+
+          <div class="form-control">
+            <label for="internet">Maneja internet?</label>
+            <input type="checkbox" id="internet" name="internet" value="moto" />
+          </div>
+
+          <h2>Experiencia en el cargo</h2>
+
+          <div class="form-control">
+            <label for="ultimoEmpleo">Último empleo</label>
+            <input type="text" id="ultimoEmpleo" name="ultimoEmpleo" />
+          </div>
+
+          <div class="form-control">
+            <label for="duracion">Duración</label>
+            <input type="text" id="duracion" name="duracion" />
+          </div>
+
+          <div class="form-control">
+            <label for="motivoRetiro">Motivo de Retiro</label>
+            <input type="text" id="motivoRetiro" name="motivoRetiro" />
+          </div>
+
+          <h2>Idiomas (habla/escribe)</h2>
+
+          <div class="form-control">
+            <label for="spa">Español</label>
+            <input type="checkbox" id="spa" name="spa" />
+          </div>
+
+          <div class="form-control">
+            <label for="eng">Inglés</label>
+            <input type="checkbox" id="eng" name="eng" />
+          </div>
+
+          <div class="form-control">
+            <label for="spa">Otros</label>
+            <input type="text" id="spa" name="spa" />
+          </div>
+        </section>
+
+        <section class="buttons">
+          <button>Guardar</button>
+          <button>Modificar</button>
+          <button>Eliminar</button>
+          <button>Consultar</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

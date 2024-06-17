@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css"
+    />
+    <title>Fichas de Evaluación</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Importadora KAIS</h1>
+      <img src="../assets/kais-logo.jpg" alt="Logo de KAIS" width="80" />
+    </header>
+
+    <main>
+      <form>
+        <section>
+          <div class="form-control">
+            <label for="codigo">Código</label>
+            <input type="text" id="codigo" name="codigo" />
+          </div>
+        </section>
+
+        <section id="noCodigo">
+          <div class="form-control">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" />
+          </div>
+
+          <div class="form-control">
+            <label for="departamento">Departamento</label>
+            <select name="departamento" id="departamento">
+              <option value="1">Administración</option>
+              <option value="2">Compras</option>
+              <option value="3">Ventas</option>
+              <option value="4">Recursos Humanos</option>
+              <option value="5">Sistemas</option>
+            </select>
+          </div>
+
+          <div class="form-control">
+            <label for="cargo">Cargo</label>
+            <select name="cargo" id="cargo">
+              <option value="1">Gerente</option>
+              <option value="3">Jefe de departamento</option>
+              <option value="4">Empleado</option>
+            </select>
+          </div>
+
+          <div class="form-control">
+            <label for="empleado">Empleado</label>
+            <select name="empleado" id="empleado">
+              <option value="1">Juan Pérez</option>
+              <option value="2">María López</option>
+              <option value="3">Pedro Ramírez</option>
+              <option value="4">Ana Sánchez</option>
+              <option value="5">Carlos González</option>
+            </select>
+          </div>
+
+          <div class="form-control">
+            <label for="observaciones">Observaciones</label>
+            <textarea name="observaciones" id="observaciones"></textarea>
+          </div>
+
+          <div class="form-control">
+            <label for="recomendaciones">Recomendaciones</label>
+            <textarea name="recomendaciones" id="recomendaciones"></textarea>
+          </div>
+
+          <div class="form-control">
+            <label for="calificacion">Calificación (/100)</label>
+            <input
+              type="number"
+              id="calificacion"
+              name="calificacion"
+              min="0"
+              max="100"
+            />
+          </div>
+        </section>
+
+        <section class="buttons">
+          <button>Guardar</button>
+          <button>Modificar</button>
+          <button>Eliminar</button>
+          <button>Consultar</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

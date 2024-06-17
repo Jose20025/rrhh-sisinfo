@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css"
+    />
+    <title>Selección de Candidatos</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Importadora KAIS</h1>
+      <img src="../../assets/kais-logo.jpg" alt="Logo de KAIS" width="80" />
+    </header>
+
+    <main>
+      <form>
+        <section>
+          <div class="form-control">
+            <label for="codigo">Código</label>
+            <input type="text" id="codigo" name="codigo" />
+          </div>
+        </section>
+
+        <section id="noCodigo">
+          <div class="form-control">
+            <label for="candidato">Candidato</label>
+            <select name="candidato" id="candidato">
+              <option value="0">Seleccione</option>
+            </select>
+          </div>
+
+          <div class="form-control">
+            <label for="pregunta">Pregunta de Selección</label>
+            <input type="text" id="pregunta" name="pregunta" />
+          </div>
+
+          <div class="form-control">
+            <label for="calificacion">Calificación</label>
+            <input type="number" id="calificacion" name="calificacion" />
+          </div>
+        </section>
+
+        <section class="buttons">
+          <button>Guardar</button>
+          <button>Modificar</button>
+          <button>Eliminar</button>
+          <button>Consultar</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

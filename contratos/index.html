@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css"
+    />
+    <title>Contratos de Empleados</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Importadora KAIS</h1>
+      <img src="../assets/kais-logo.jpg" alt="Logo de KAIS" width="80" />
+    </header>
+
+    <main>
+      <form>
+        <section>
+          <div class="form-control">
+            <label for="codigo">Código</label>
+            <input type="text" id="codigo" name="codigo" />
+          </div>
+        </section>
+
+        <section id="noCodigo">
+          <div class="form-control">
+            <label for="nit">NIT de la Empresa</label>
+            <input type="text" id="nit" name="nit" />
+          </div>
+
+          <div class="form-control">
+            <label for="nombre">Nombre del empleado</label>
+            <input type="text" id="nombre" name="nombre" />
+          </div>
+
+          <div class="form-control">
+            <label for="nacionalidad">Nacionalidad</label>
+            <input type="text" id="nacionalidad" name="nacionalidad" />
+          </div>
+
+          <div class="form-control">
+            <label for="estadoCivil">Estado Civil</label>
+            <select name="estadoCivil" id="estadoCivil">
+              <option value="0">Seleccione</option>
+              <option value="soltero">Soltero</option>
+              <option value="casado">Casado</option>
+              <option value="divorciado">Divorciado</option>
+              <option value="viudo">Viudo</option>
+            </select>
+          </div>
+
+          <div class="form-control">
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" name="direccion" />
+          </div>
+
+          <div class="form-control">
+            <label for="cargo">Cargo</label>
+            <select name="cargo" id="cargo">
+              <option value="0">Seleccione</option>
+            </select>
+          </div>
+
+          <div class="form-control">
+            <label for="tipoContrato">Tipo de Contrato</label>
+            <select name="tipoContrato" id="tipoContrato">
+              <option value="0">Seleccione</option>
+              <option value="fijo">Fijo</option>
+              <option value="indefinido">Indefinido</option>
+              <option value="obra">Obra</option>
+              <option value="prestacion">Prestación de Servicios</option>
+            </select>
+          </div>
+
+          <div class="form-control">
+            <label for="sueldo">Sueldo</label>
+            <input type="text" id="sueldo" name="sueldo" />
+          </div>
+
+          <div class="form-control">
+            <label for="vigencia">Vigencia del contrato</label>
+            <input type="text" id="vigencia" name="vigencia" />
+          </div>
+        </section>
+
+        <section class="buttons">
+          <button>Guardar</button>
+          <button>Modificar</button>
+          <button>Eliminar</button>
+          <button>Consultar</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

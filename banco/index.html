@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css"
+    />
+    <title>Planillas de Sueldos</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Importadora KAIS</h1>
+      <img src="../assets/kais-logo.jpg" alt="Logo de KAIS" width="80" />
+    </header>
+
+    <main>
+      <form>
+        <section>
+          <div class="form-control">
+            <label for="codigo">Código</label>
+            <input type="text" id="codigo" name="codigo" />
+          </div>
+        </section>
+
+        <section id="noCodigo">
+          <div class="form-control">
+            <label for="empleado">Empleado</label>
+            <select name="empleado" id="empleado">
+              <option value="1">Empleado 1</option>
+              <option value="2">Empleado 2</option>
+              <option value="3">Empleado 3</option>
+            </select>
+          </div>
+
+          <div class="form-control">
+            <label for="antiguedad">Antigüedad</label>
+            <span>Seleccione un empleado</span>
+          </div>
+
+          <div class="form-control">
+            <label for="bonoAntiguedad">Bono de Antigüedad</label>
+            <input type="text" id="bonoAntiguedad" name="bonoAntiguedad" />
+          </div>
+
+          <div class="form-control">
+            <label for="bonoProduccion">Bono de Producción</label>
+            <input type="text" id="bonoProduccion" name="bonoProduccion" />
+          </div>
+
+          <div class="form-control">
+            <label for="subsidioFrontera">Subsidio de Frontera</label>
+            <input type="text" id="subsidioFrontera" name="subsidioFrontera" />
+          </div>
+
+          <div class="form-control">
+            <label for="trabajoExtra">Trabajo Extraordinario</label>
+            <input type="text" id="trabajoExtra" name="trabajoExtra" />
+          </div>
+
+          <div class="form-control">
+            <label for="pagoDominical">Pago Dominical</label>
+            <input type="text" id="pagoDominical" name="pagoDominical" />
+          </div>
+
+          <div class="form-control">
+            <label for="otrosBonos">Otros bonos</label>
+            <input type="text" id="otrosBonos" name="otrosBonos" />
+          </div>
+
+          <div class="form-control">
+            <label for="horasPagadas">Horas pagadas</label>
+            <input type="text" id="horasPagadas" name="horasPagadas" />
+          </div>
+
+          <div class="form-control">
+            <label for="diasPagados">Días pagados</label>
+            <input type="text" id="diasPagados" name="diasPagados" />
+          </div>
+
+          <div class="form-control">
+            <label for="haberBasico">Haber básico</label>
+            <input type="text" id="haberBasico" name="haberBasico" />
+          </div>
+
+          <div class="form-control">
+            <label for="totalGanado">Total ganado</label>
+            <input type="text" id="totalGanado" name="totalGanado" />
+          </div>
+
+          <div class="form-control">
+            <label for="afp">AFP</label>
+            <input type="text" id="afp" name="afp" />
+          </div>
+
+          <div class="form-control">
+            <label for="rc-iva">RC IVA</label>
+            <input type="text" id="rc-iva" name="rc-iva" />
+          </div>
+
+          <div class="form-control">
+            <label for="otrosDescuentos">Otros descuentos</label>
+            <input type="text" id="otrosDescuentos" name="otrosDescuentos" />
+          </div>
+
+          <div class="form-control">
+            <label for="totalDescuentos">Total de Descuentos</label>
+            <input type="text" id="totalDescuentos" name="totalDescuentos" />
+          </div>
+
+          <div class="form-control">
+            <label for="liquidoPagable">Líquido pagable</label>
+            <input type="text" id="liquidoPagable" name="liquidoPagable" />
+          </div>
+        </section>
+
+        <section class="buttons">
+          <button>Guardar</button>
+          <button>Modificar</button>
+          <button>Eliminar</button>
+          <button>Consultar</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
